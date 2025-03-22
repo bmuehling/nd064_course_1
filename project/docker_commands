@@ -8,10 +8,12 @@ docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
-docker container logs 4998fcc962b5b931f3996b3595b1c22f7027cbab5a0df190562ffa887dd06561
+docker container ls # retrieves the container id
+docker container logs 4998fcc962b5
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+# just the last lines with a couple of test requests
 INFO: _internal: 21/03/2025 15:44:36,  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
 INFO: _internal: 21/03/2025 15:44:46, 172.17.0.1 - - [21/Mar/2025 15:44:46] "GET / HTTP/1.1" 200 -
 INFO: _internal: 21/03/2025 15:44:46, 172.17.0.1 - - [21/Mar/2025 15:44:46] "GET /static/css/main.css HTTP/1.1" 304 -
